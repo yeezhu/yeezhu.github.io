@@ -1,0 +1,10 @@
+@article{wei2017correlated,
+  title={Correlated Topic Vector for Scene Classification},
+  author={Wei, Pengxu and Qin, Fei and Wan, Fang and Zhu, Yi and Jiao, Jianbin and Ye, Qixiang},
+  journal={IEEE Transactions on Image Processing},
+  volume={26},
+  number={7},
+  pages={3221--3234},
+  year={2017},
+  publisher={IEEE}
+}
