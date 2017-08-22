@@ -1,0 +1,177 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Yi Zhu</title>
+		<link rel="shortcut icon" href="./img/favicon.ico">
+		<script src="./asset/js/jquery-2.2.2.min.js"></script>
+		<script src="./bootstrap/js/bootstrap.min.js"></script>
+		<script src="./asset/js/site-bundle.js" type="text/javascript"></script>
+		
+		<link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="./asset/css/site.css" rel="stylesheet">
+		<link href="./asset/css/mycss" rel="stylesheet" type="text/css" >
+   		<!-- <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+   		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+   		<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+ -->
+	</head>
+	<!-- <body class="page-borders-thick canvas-style-normal"> -->
+	<body class="page-borders-thick canvas-style-normal"  data-gr-c-s-loaded="true">
+<!-- 	<div > -->
+	<div id="canvas" class="content">
+
+		<header id="header" class="clear">
+			<div id="upper-log">
+				<h1 class="page-title">
+					Soft Proposal Networks for Weakly Supervised Object Localization
+				</h1>
+				<p class="page-author">
+					<a href="/index.html">  <u>Yi Zhu</u>&emsp;</a>
+					<a href="http://yzhou.work">  <u>Yanzhao Zhou</u>&emsp;</a>
+					<a href="http://people.ucas.ac.cn/~qxye">  <u>Qixiang Ye</u>&emsp;</a>
+					<a href="http://people.duke.edu/~qq3/">  <u>Qiang Qiu</u>&emsp;</a>
+					<a href="http://people.ucas.ac.cn/~jiaojianbin">  <u>Jianbin Jiao</u>  
+					</a>
+				</p>
+			</div>
+
+		</header>
+		<div class="subpage">
+		<hr>
+
+		<section class="clear subsec">
+			<h1 class="sec-title">
+    			Sources
+    		</h1>
+    		<h2 class="sec-sub-title">
+    			• Files
+    		</h2>
+    		&nbsp;
+			<a class="btn btn-default btn-md" href="#"> 
+				<i class="fa fa-file-pdf-o"></i> 
+					Arxiv
+			</a>  
+			&nbsp;
+			<a class="btn btn-default btn-md" href="#"> 
+				<i class="fa fa-file-text-o"></i> 
+					Supp
+			</a>  
+			&nbsp;
+			<a class="btn btn-default btn-md" href="#"> 
+				<i class="fa fa-file-image-o"></i> 
+					Poster
+			</a> 
+			
+			<h2 class="sec-sub-title">
+    			• Codes
+    		</h2>
+
+			&nbsp;
+			<a class="btn btn-default btn-md" href="https://github.com/ZhouYanzhao/SPN"> 
+				<i class="fa fa-file-code-o"></i> 
+					Torch Version
+			</a> 
+			&nbsp;
+			<a class="btn btn-default btn-md" href="#"> 
+				<i class="fa fa-file-code-o"></i> 
+					Pytorch Version
+			</a>
+			&nbsp;
+			<a class="btn btn-default btn-md" href="#"> 
+				<i class="fa fa-coffee"></i> 
+					Caffe Version
+			</a> 
+			<p class="page-descr">
+			&emsp;Yanzhao Zhou helped upgrade the torch version and Wei Ke helped implement the caffe version.<i class="fa fa-smile-o"></i>
+			</p>
+			<h2 class="sec-sub-title">
+    			• Models
+    		</h2>			
+			&nbsp;
+			<a class="btn btn-default btn-md" href="#"> 
+				<i class="fa fa-coffee"></i> 
+					SP-GoogLeNet(torch) for ImageNet 
+			</a>
+		</section>
+
+		<section id="bio" class="clear subsec">
+      		<h1 class="sec-title">
+    			Introduction
+    		</h1>
+	        In this work, we propose a network component called Soft Proposal, which can be inserted after any CNN layer. 
+	    	<div class="sqs-layout sqs-grid-12 columns-12">
+	     	<div class="row sqs-row">
+	     	<div class="col sqs-col-12 span-12">
+	     	<div class="sqs-block image-block sqs-block-image sqs-text-ready">
+	     	<div class="sqs-block-content">
+	    		<div class="image-block-wrapper has-aspect-ratio">
+	    		<center>
+	            	<img class="thumb-image loaded" src="./img/spn-intro.png">
+	            </center>
+	        	</div>
+	        </div>
+	     	</div>
+	     	</div>
+			</div>
+
+			The Soft Proposal map iteratively evolves and jointly optimizes with convolutional filters, thus provides objectness information during the end-to-end learning procedure of CNN.
+			<div class="row sqs-row">
+	     	<div class="col sqs-col-12 span-12">
+	     	<div class="sqs-block image-block sqs-block-image sqs-text-ready">
+	     	<div class="sqs-block-content">
+	    		<div class="image-block-wrapper has-aspect-ratio">
+	    		<center>
+	            	<img class="thumb-image loaded" src="./img/spn-archi.jpg">
+	            </center>
+	        	</div>
+	        </div>
+	     	</div>
+	     	</div>
+			</div>
+
+			CNN equipped with Soft Proposal can be led to learn better object-centric filters, discover more discriminative visual evidence, and suppress background interference.
+			<div class="row sqs-row">
+	     	<div class="col sqs-col-12 span-12">
+	     	<div class="sqs-block image-block sqs-block-image sqs-text-ready">
+	     	<div class="sqs-block-content">
+	    		<div class="image-block-wrapper has-aspect-ratio">
+	    		<center>
+	            	<img class="thumb-image loaded" src="./img/spn-map.jpg">
+	            </center>
+	        	</div>
+	        </div>
+	     	</div>
+	     	</div>
+			</div>
+
+			</div>
+			
+
+    	</section>
+
+		
+		<section class="clear subsec">
+			<h1 class="sec-title">
+    			Reference
+    		</h1>
+    		<small>
+    		<pre class="page-bib">
+@article{zhu2017soft,
+  title={{Soft Proposal Networks for Weakly Supervised Object Localization}},
+  author={Zhu, Y. and Zhou, Y. and Ye, Q. and Qiu, Q. and Jiao, J.},
+  journal={ICCV},
+  year={2017}
+}
+    		</pre>	
+    		</small>		
+		</section>
+
+    </div>
+	</div>
+
+ 	<footer>
+ 		Copyright © 2017 Yi Zhu
+ 	</footer>
+	</body>
+</html>
